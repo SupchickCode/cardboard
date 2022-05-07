@@ -1,4 +1,11 @@
 # Technical requirement 
+This is a card game, something like
+blizzard hearthstone games.
 
+I want to make it possible to play this game through 
+multiplayer right in the browser (In a simple way, of course).
 
 # Technology stack
+- Vue 3.2.0
+- Express 4.17.0
+- TS
