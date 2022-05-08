@@ -1,14 +1,14 @@
 <template>
-  <div class="card card-border" style="width: 18rem">
-    <img class="card-img-top" :src="require(`@/assets/${img_url}`)" />
-    <div class="card-body">
-      <h5 class="card-title">{{ name }}</h5>
-      <p class="card-text">
-        {{ description }}
-      </p>
-      <p class="card-text">Атака {{ attack }}</p>
-      <p class="card-text">Здоровье {{ health }}</p>
-      <p class="card-text">Стоймость {{ cost }}</p>
+  <div class="card">
+    <div class="card-border">
+      <img class="card-img-top" :src="require(`@/assets/${img_url}`)" />
+      <div>
+        <h5>{{ name }}</h5>
+        <p>
+          {{ description }}
+        </p>
+        <p>Атака {{ attack }} Здоровье {{ health }} Стоймость {{ cost }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -22,8 +22,7 @@ export default {
       type: String,
     },
     description: {
-      default:
-        "Some quick example text to build on the card title and make up the bulkof the card's content.",
+      default: "Some quick example text to build on the card title",
       type: String,
     },
     health: {
@@ -46,19 +45,21 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .card {
   display: inline-block;
+  max-width: 175px;
+  max-height: 65px;
+  padding: 5px;
 }
 
 .card-border {
+  border: solid;
   border-color: black;
-  border: 1px;
 }
 
 .card-img-top {
-  max-width: 175px;
-  max-height: 175px;
+  max-width: 85px;
+  max-height: 85px;
 }
 </style>
