@@ -1,11 +1,21 @@
 # Technical requirement 
-This is a card game, something like
-blizzard hearthstone games.
+    This is a card game, something like
+    blizzard hearthstone games.
 
-I want to make it possible to play this game through 
-multiplayer right in the browser (In a simple way, of course).
+    I want to make it possible to play this game through 
+    multiplayer right in the browser (In a simple way, of course).
+
+# Stage №1
+    Add the battlefield and opportunity move a cards.
+    Make a card template, the logic of working with drug and drop.
+    Set cards on the battlefield
+    Receive deck via server.
+
+# Stage №2
+   ...
 
 # Technology stack
-- Vue 3.2.0
-- Express 4.17.0
-- TS
+    - Vue 3.2.0
+    - Express 4.17.0
+    - Redis
+    - TS
